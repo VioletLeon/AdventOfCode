@@ -7,7 +7,10 @@ function calculateIncrement() {
     if (i === 0) {
       count;
     } else {
-      if (input[i] > input[i - 1]) {
+      let sum1 = input[i] + input[i + 1] + input[i + 2];
+      let sum2 = input[i - 1] + input[i] + input[i + 1];
+
+      if (sum1 > sum2) {
         count++;
       }
     }
